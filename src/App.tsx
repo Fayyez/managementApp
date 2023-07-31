@@ -1,8 +1,10 @@
 import './App.css'
-import Message from './card'
+import Listing from './card'
 
-function App() {
- return <div><Message/></div>
+const App: React.FC = () => {
+  return (
+   <div><Listing /></div>
+  )
 }
 
 export default App
