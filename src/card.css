@@ -22,8 +22,8 @@ body {
 
 
 .img-fluid.rounded-start{
-    border: 6px solid #333; /* Example border style */
-    border-radius: 8px; /* Example border radius */
+    border: 3px solid #333; /* Example border style */
+    border-radius: 4px; /* Example border radius */
 }
 
 .card-type,
