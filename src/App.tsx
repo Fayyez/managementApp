@@ -1,9 +1,13 @@
 import './App.css'
 import searchBar from './searchBar'
+import Listing from './card'
 
 const App: React.FC = () => {
   return (
-   <div><searchBar /></div>
+    <>
+    <div><Listing/></div>
+    <div><searchBar/></div>
+    </>
   )
 }
 

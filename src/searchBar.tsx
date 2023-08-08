@@ -1,5 +1,6 @@
 import "./searchBarStyle.css";
-import React, { FC, useState } from "react";
+import 'react'
+//import React, { useState } from "react";
 // import the array of objects in database
 
 const [searchInput, setSearchInput] = useState("");
@@ -18,18 +19,16 @@ if (searchInput.length > 0) {
   // ...
 }
 
-const searchBar: React.FC = () => {
+const searchBar = () => {
   return (
-    <div>
+    <div className="searchBar">
       <input
         type="text"
         placeholder="search"
         onChange={inputHandler}
         value={searchInput}
       ></input>
-      <table>
-        <tr></tr>
-      </table>
+
     </div>
   );
 };

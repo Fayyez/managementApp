@@ -1,4 +1,4 @@
-import './card.css'
+import 'bootstrap'
 import React from 'react'
 
 export interface propertyProps {  //template for property object
@@ -59,12 +59,10 @@ function Listing() {
           <>
             <div className="property-card" key={card._id} >
               <div className="row g-1">
+              <i className="fa fa-search"></i>
+              <i className="fa fa-search"></i>
                 <div className="col-md-4">
-                  <img
-                    src={card.imagePath}
-                    className="img-fluid rounded-start"
-                    alt="..."
-                  />
+                <i className="bi bi-search"></i>
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
@@ -74,9 +72,10 @@ function Listing() {
                     </h5>
                     <p className="card-type">
                       Type:{" "}
-                      <small className="text-muted">{card.assigned}</small>
+                      <small className="text-muted">  <i className="bi bi-search"></i>{card.assigned}</small>
                     </p>
                     <p className="card-address">
+                    <i className="bi bi-search"></i>
                       Address:{" "}
                       <small className="text-muted">{card.address}</small>
                     </p>
